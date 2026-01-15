@@ -1,0 +1,25 @@
+{
+  "name": "expenses-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@types/node": "^25.0.8",
+    "nuxt": "^3.8.4",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@nuxt/ui": "^2.13.1",
+    "@pinia/nuxt": "^0.5.1",
+    "axios": "^1.6.2",
+    "pinia": "^2.1.7"
+  }
+}
