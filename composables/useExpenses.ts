@@ -3,7 +3,7 @@ import type { Expense, ExpenseCreate, ExpenseUpdate, PaginatedResponse, QueryPar
 
 export const useExpenses = () => {
   const config = useRuntimeConfig();
-  const API_BASE = config.public.apiBase;
+  const API_BASE = config.public.apiBase.replace(/\/$/, '');
   const expenses = ref<Expense[]>([]);
   const currentExpense = ref<Expense | null>(null);
   const loading = ref(false);
